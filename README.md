@@ -133,7 +133,7 @@ If you face any conflicts while applying patches, apply the patch manually.
 
 ## Credits
 These people have helped this project in some way or another, so they should be the ones who receive all the credit:
-- [RisingTechOSS](https://github.com/RisingTechOSS)
+- [AlpahaDroid](https://github.com/AlphaDroid-Project)
 - [Phhusson](https://github.com/phhusson)
 - [Naz664](https://github.com/naz664)
 - [AndyYan](https://github.com/AndyCGYan)
