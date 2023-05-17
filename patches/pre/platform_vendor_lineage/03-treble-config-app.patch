@@ -1,0 +1,27 @@
+From 214953c3b72eff4b7edc6653e9865d19e37a869d Mon Sep 17 00:00:00 2001
+From: Kuaipz <2685697179@qq.com>
+Date: Wed, 17 May 2023 13:54:34 +0800
+Subject: [PATCH] treble-config-app
+
+---
+ config/common_mobile.mk | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/config/common_mobile.mk b/config/common_mobile.mk
+index 6ee12fa..0d063d3 100644
+--- a/config/common_mobile.mk
++++ b/config/common_mobile.mk
+@@ -15,10 +15,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
+ # Apps
+ PRODUCT_PACKAGES += \
+     Aperture \
+-    Eleven \
+-    Etar \
+     ExactCalculator \
+-    Jelly \
+     Profiles \
+     Seedvault
+ 
+-- 
+2.34.1
+
