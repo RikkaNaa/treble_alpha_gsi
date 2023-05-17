@@ -1,0 +1,28 @@
+From fcba898d62b606ca873c47e2dba0906f96ae2010 Mon Sep 17 00:00:00 2001
+From: Kuaipz <2685697179@qq.com>
+Date: Thu, 18 May 2023 00:33:53 +0800
+Subject: [PATCH] treble-handheld-product
+
+---
+ target/product/handheld_product.mk | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/target/product/handheld_product.mk b/target/product/handheld_product.mk
+index bf41d28..67d9052 100644
+--- a/target/product/handheld_product.mk
++++ b/target/product/handheld_product.mk
+@@ -22,11 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
+ 
+ # /product packages
+ PRODUCT_PACKAGES += \
+-    Browser2 \
+     Calendar \
+     Contacts \
+     DeskClock \
+-    Gallery2 \
+     Music \
+     OneTimeInitializer \
+     preinstalled-packages-platform-handheld-product.xml \
+-- 
+2.34.1
+
