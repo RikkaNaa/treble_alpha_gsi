@@ -1,25 +1,41 @@
-From 9f01ab9d664c685f96585def344f557b6bd9dc6f Mon Sep 17 00:00:00 2001
+From 37e3913785d93061ff7efda93f7bf0f3f4348736 Mon Sep 17 00:00:00 2001
 From: Kuaipz <2685697179@qq.com>
-Date: Wed, 17 May 2023 14:55:23 +0800
+Date: Thu, 18 May 2023 00:01:10 +0800
 Subject: [PATCH] treble-gms-common
 
 ---
- common/common-vendor.mk | 7 +------
- 1 file changed, 1 insertion(+), 6 deletions(-)
+ common/Android.bp       | 2 +-
+ common/common-vendor.mk | 8 +-------
+ 2 files changed, 2 insertions(+), 8 deletions(-)
 
+diff --git a/common/Android.bp b/common/Android.bp
+index 6e80fc4..85f43c9 100644
+--- a/common/Android.bp
++++ b/common/Android.bp
+@@ -159,7 +159,7 @@ android_app_import {
+ 	name: "Photos",
+ 	owner: "gms",
+ 	apk: "proprietary/product/app/Photos/Photos.apk",
+-	overrides: ["SnapdragonGallery"],
++	overrides: ["SnapdragonGallery", "Gallery2"],
+ 	presigned: true,
+ 	dex_preopt: {
+ 		enabled: false,
 diff --git a/common/common-vendor.mk b/common/common-vendor.mk
-index b5f68a2..bc9c827 100644
+index b5f68a2..76ae8b5 100644
 --- a/common/common-vendor.mk
 +++ b/common/common-vendor.mk
-@@ -57,7 +57,6 @@ PRODUCT_PACKAGES += \
+@@ -57,9 +57,7 @@ PRODUCT_PACKAGES += \
      GoogleServicesFramework \
      LatinIMEGooglePrebuilt \
      Phonesky \
 -    PixelSetupWizard \
      PrebuiltGmsCoreSc \
-     SetupWizardPrebuilt \
+-    SetupWizardPrebuilt \
      TrichromeLibrary \
-@@ -92,20 +91,16 @@ endif
+     TrichromeLibrary-Stub \
+     WebViewGoogle \
+@@ -92,20 +90,16 @@ endif
  # FULL GAPPS (expand core gapps)
  ifeq ($(strip $(GAPPS_BUILD_TYPE)),2)
  PRODUCT_PACKAGES += \
