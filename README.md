@@ -60,7 +60,7 @@ git clone https://github.com/Kuaipz/treble_alpha_gsi.git -b 13
 
 ```bash
 mkdir -p .repo/local_manifests
-cp treble_RisingOS_gsi/manifest.xml .repo/local_manifests/alpha.xml
+cp treble_alpha_gsi/manifest.xml .repo/local_manifests/alpha.xml
 ```
 
 ### Afterwards, sync the source by running this command:
