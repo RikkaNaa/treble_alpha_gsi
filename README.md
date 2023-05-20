@@ -47,7 +47,7 @@ repo init -u https://github.com/alphadroid-project/manifest -b alpha-13 --git-lf
 ### Want to save some space ? Then use this:
 
 ```bash
-repo init --depth=1 --no-repo-verify -u https://github.com/alphadroid-project/manifest -b alpha-13 --git-lfs
+repo init --depth=1 -u https://github.com/alphadroid-project/manifest -b alpha-13 --git-lfs
 ```
 
 ### Clone this repo:
