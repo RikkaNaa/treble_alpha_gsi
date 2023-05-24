@@ -1,27 +1,23 @@
-From cfb13756061b58e67e61876d20d997043a2bd683 Mon Sep 17 00:00:00 2001
-From: ChonDoit <thphantomblog@gmail.com>
-Date: Thu, 10 Nov 2022 21:03:49 +0000
-Subject: [PATCH] Remove duplicated ro.secure and ro.adb.secure
+From 92016f1c76d4ed788154c4ed300dc7880c19b81a Mon Sep 17 00:00:00 2001
+From: Kuaipz <2685697179@qq.com>
+Date: Wed, 24 May 2023 13:21:46 +0800
+Subject: [PATCH] Remove-duplicated-ro-adb-secure-apn-call
 
 ---
- core/main.mk | 8 --------
- 1 file changed, 8 deletions(-)
+ core/main.mk | 4 ----
+ 1 file changed, 4 deletions(-)
 
 diff --git a/core/main.mk b/core/main.mk
-index 66b92d88d..848bc8c2e 100644
+index 8168c21..848bc8c 100644
 --- a/core/main.mk
 +++ b/core/main.mk
-@@ -364,14 +364,6 @@ user_variant := $(filter user userdebug,$(TARGET_BUILD_VARIANT))
+@@ -364,10 +364,6 @@ user_variant := $(filter user userdebug,$(TARGET_BUILD_VARIANT))
  enable_target_debugging := true
  tags_to_install :=
  ifneq (,$(user_variant))
 -  # Target is secure in user builds.
 -  ADDITIONAL_SYSTEM_PROPERTIES += ro.secure=1
 -  ADDITIONAL_SYSTEM_PROPERTIES += security.perf_harden=1
--
--  ifeq ($(user_variant),user)
--    ADDITIONAL_SYSTEM_PROPERTIES += ro.adb.secure=1
--  endif
 -
    ifeq ($(user_variant),userdebug)
      # Pick up some extra useful tools
