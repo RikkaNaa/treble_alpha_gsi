@@ -53,7 +53,7 @@ repo init --depth=1 -u https://github.com/alphadroid-project/manifest -b alpha-1
 ### Clone this repo:
 
 ```bash
-git clone https://github.com/Kuaipz/treble_alpha_gsi.git -b 13
+git clone https://github.com/KoysX/treble_alpha_gsi.git -b 13
 ```
 
 ### Preparing local manifest:
