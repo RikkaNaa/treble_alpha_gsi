@@ -1,4 +1,4 @@
-# treble_alphadroid_gsi
+# treble alphadroid gsi for diting
 
 ### To get started with building AlphaDroid GSI,
 you'll need to get familiar with [Git and Repo](https://source.android.com/source/using-repo.html) as well as [How to build a GSI](https://github.com/phhusson/treble_experimentations/wiki/How-to-build-a-GSI%3F).v
@@ -53,7 +53,7 @@ repo init --depth=1 -u https://github.com/alphadroid-project/manifest -b alpha-1
 ### Clone this repo:
 
 ```bash
-git clone https://github.com/KoysX/treble_alpha_gsi.git -b 13
+git clone https://github.com/Rikkaawa/treble_alpha_gsi.git -b 13
 ```
 
 ### Preparing local manifest:
@@ -66,7 +66,7 @@ cp treble_alpha_gsi/manifest.xml .repo/local_manifests/alpha.xml
 ### Afterwards, sync the source by running this command:
 
 ```bash
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j4
 ```
 
 ### After syncing, apply the patches:
@@ -74,6 +74,7 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 Copy the patches folder to rom folder and in rom folder
 
 ```
+cp treble_alpha_gsi/* . -r
 bash patches/apply-patches.sh .
 ```
 
@@ -83,7 +84,7 @@ bash patches/apply-patches.sh .
  
  ```
  cd device/phh/treble
- bash generate.sh lineage
+ bash generate.sh ./lineage.mk
  ```
 
 ### Turn on caching to speed up build
@@ -133,6 +134,7 @@ If you face any conflicts while applying patches, apply the patch manually.
 
 ## Credits
 These people have helped this project in some way or another, so they should be the ones who receive all the credit:
+- [KyosX](https://github.com/KyosX)
 - [AlpahaDroid](https://github.com/AlphaDroid-Project)
 - [Phhusson](https://github.com/phhusson)
 - [Naz664](https://github.com/naz664)
