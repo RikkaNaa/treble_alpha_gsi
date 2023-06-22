@@ -1,5 +1,5 @@
 # treble alphadroid gsi for diting
-
+diting最新的AlphaDroid无法选择刷新率，Display Mode只有60Hz，所以，别跑  
 ### To get started with building AlphaDroid GSI,
 you'll need to get familiar with [Git and Repo](https://source.android.com/source/using-repo.html) as well as [How to build a GSI](https://github.com/phhusson/treble_experimentations/wiki/How-to-build-a-GSI%3F).v
 
@@ -129,6 +129,7 @@ If you face any conflicts while applying patches, apply the patch manually.
 ## Notes
 - If bluetooth calls or bluetooth media do not work well for you, make sure you have the "Use System Wide BT HAL" checkbox enabled on the Misc page of Treble App. If not, enable and reboot.
 - If you have a non-Samsung device with a Qualcomm chipset and VoLTE isn't working with the default IMS package provided by Treble App, try installing this [alternative IMS package](https://treble.phh.me/stable/ims-caf-s.apk).
+- Only 60Hz on diting.
 
 
 
